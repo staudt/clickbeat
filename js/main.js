@@ -48,7 +48,7 @@ function playColumn(col) {
     for (var row of document.getElementsByClassName("sequencer")[0].getElementsByClassName("instrument")) {
         var instrument_name = row.getElementsByClassName("instrument_name").innerText;
         if (row.getElementsByClassName("box")[col].classList.contains('selected')) {
-            //sound.play(instrument_name);
+            sound.play(instrument_name);
         }
     }
 };
